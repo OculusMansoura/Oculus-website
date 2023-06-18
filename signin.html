@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oculus</title>
+
+    <link href="signin.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="signin.js"></script>
+
+
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+           <div class="logo"><img src="logo.png" alt=""></div>
+                  <ul class="links">
+                     <li class="home"><a href="Home.html"><i class="fa fa-home"></i>Home</a></li>
+                     <li class="about"><a href="About.html"><i class="fa fa-user"></i>About Us</a></li>
+                     <li class="active"><a href="signin.html"><i class="fa fa-sharp fa-solid fa-right-to-bracket"></i>Sign In</a></li>
+                     <li class="services"><a href="services.html"><i class="fa fa-clone"></i>Services</a></li>
+                     <li class="contact"><a href="Contact.html"><i class="fa fa-phone"></i>Contact</a></li>
+                 </ul>
+                    <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                    </div>
+         </div>
+     
+         <div class="dropdown_menu">
+             <li class="home"><a href="Home.html"><i class="fa fa-home"></i>Home</a></li>
+             <li class="about"><a href="About.html"><i class="fa fa-user"></i>About Us</a></li>
+             <li class="active"><a href="signin.html"><i class="fa fa-sharp fa-solid fa-right-to-bracket"></i>Sign In</a></li>
+             <li class="services"><a href="services.html"><i class="fa fa-clone"></i>Services</a></li>
+             <li class="contact"><a href="Contact.html"><i class="fa fa-phone"></i>Contact</a></li>
+         </div>
+        
+     </header>
+         <!-- js dropdown_menu -->
+     <script>
+         const toggleBtn = document.querySelector(' .toggle_btn')
+         const toggleBtnIcon = document.querySelector(' .toggle_btn i')
+         const dropDownMenu = document.querySelector(' .dropdown_menu')
+       
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+     
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+     
+     </script>
+
+    <div class="signin">
+<!-- 
+        <?php if (strlen($error) > 0) { ?>
+        <div class="error-sms">
+            <p>ERROR: <br>
+                <?php echo $error; ?>
+            </p>
+            <div class="fas fa-cancel"></div>
+        </div>
+        <?php } ?>
+
+        <?php if (strlen($success) > 0) { ?>
+
+        <ul>
+            <li>
+                <?php echo $success; ?>
+            </li>
+        </ul>
+
+        <?php } else { ?> -->
+
+        <form action="login.php" method="post">
+            <h1 class="h1signin">SIGN IN</h1>
+            <label class="label" for="UserID">UserID:</label> <br>
+            <input name="userid" type="text" id="UserID" placeholder="Enter UserID" required> <br>
+            <label class="label" for="Password">Password:</label> <br>
+            <input name="password" type="Password" id="Password" placeholder="Enter Password" required> <br>
+            <button type="submit">sign in</button> <br>
+
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Our Website</h4>
+                    <ul>
+                        <li><a href="Home.html">home</a></li>
+                        <li><a href="About.html">about us</a></li>
+                        <li><a href="signin.html">sign In</a></li>
+                        <li><a href="services.html">our services</a></li>
+                        <li><a href="Contact.html">contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <?php } ?>
+
+</body>
+
+</html>

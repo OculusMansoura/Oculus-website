@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oculus</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <meta thhp-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+   <div class="navbar">
+      <div class="logo"><img src="logo.png" alt=""></div>
+             <ul class="links">
+                <li class="home"><a href="Home.html"><i class="fa fa-home"></i>Home</a></li>
+                <li class="about"><a href="About.html"><i class="fa fa-user"></i>About Us</a></li>
+                <li class="log"><a href="signin.html"><i class="fa fa-sharp fa-solid fa-right-to-bracket"></i>Sign In</a></li>
+                <li class="active"><a href="services.html"><i class="fa fa-clone"></i>Services</a></li>
+                <li class="contact"><a href="Contact.html"><i class="fa fa-phone"></i>Contact</a></li>
+            </ul>
+               <div class="toggle_btn">
+               <i class="fa-solid fa-bars"></i>
+               </div>
+    </div>
+
+    <div class="dropdown_menu">
+        <li class="home"><a href="Home.html"><i class="fa fa-home"></i>Home</a></li>
+        <li class="about"><a href="About.html"><i class="fa fa-user"></i>About Us</a></li>
+        <li class="active"><a href="signin.html"><i class="fa fa-sharp fa-solid fa-right-to-bracket"></i>Sign In</a></li>
+        <li class="services"><a href="services.html"><i class="fa fa-clone"></i>Services</a></li>
+        <li class="contact"><a href="Contact.html"><i class="fa fa-phone"></i>Contact</a></li>
+    </div>
+   
+</header>
+    <!-- js dropdown_menu -->
+<script>
+    const toggleBtn = document.querySelector(' .toggle_btn')
+    const toggleBtnIcon = document.querySelector(' .toggle_btn i')
+    const dropDownMenu = document.querySelector(' .dropdown_menu')
+  
+   toggleBtn.onclick = function() {
+       dropDownMenu.classList.toggle('open')
+       const isOpen = dropDownMenu.classList.contains('open')
+
+       toggleBtnIcon.classList = isOpen
+       ? 'fa-solid fa-xmark'
+       : 'fa-solid fa-bars'
+   }
+
+</script>
+    <div class="section">
+        <div class="title">
+            <h1>Our Services</h1>
+        </div>
+        <hr id="hr2" width="20%">
+        <div class="servicess">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                </div>
+                <p>Choosing assistive equipment and tools based on reliable
+                    criteria and ensuring that it functions correctly to
+                     prevent misuse.</p>
+                    <a href="https://apps.who.int/iris/bitstream/handle/10665/44407/9789241564045_eng.pdf" class="button">Read More</a>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-file"></i>
+                </div>
+                <p> The system provides an inventory to solve the majority of issues, 
+                    such as data entry errors, 
+                    having a management of the maintenance process to prevent device neglect.</p>
+                    <a href="https://www.researchgate.net/publication/325107156_Efficient_Equipment_Management_for_Biomedical_Engineering_Department_in_the_Hospital" class="button">Read More</a>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-file-circle-plus"></i>
+                </div>
+                <p>Existence of a replacement plan for example 
+                    establish needs assessment plan and ensure Update equipment data. </p>
+                    <a href="https://nces.ed.gov/pubs2005/tech_suite/part_2.asp" class="button">Read More</a>
+            </div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Our Website</h4>
+                    <ul>
+                        <li><a href="Home.html">home</a></li>
+                        <li><a href="About.html">about us</a></li>
+                        <li><a href="signin.html">sign In</a></li>
+                        <li><a href="services.html">our services</a></li>
+                        <li><a href="Contact.html">contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
