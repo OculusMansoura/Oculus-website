@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url("department.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.logo{
+    height: 6rem;
+   position: absolute; 
+   top: 0;
+   left:10px;
+}
+@media (max-width:480px){
+    .title{
+     margin-top: 6rem;
+    }
+ }
+ @media (max-width:576pxpx){
+    .title{
+     margin-top: 6rem;
+    }
+ }
+.form-container{
+    height: 100%;
+    width: 100%;
+    margin: 50px auto;
+    padding-top: 40px;
+}
+.form-container form{
+    height:1350px;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #7c888b;
+    padding: 30px;
+    text-transform: capitalize;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+.form-container form h3{
+    text-align: center;
+    font-size:  2.5rem; 
+    color: whitesmoke;
+}
+.form-container form label{
+    font-size: 1.3rem;
+    padding: 3px 0;
+}
+.form-container form input{
+    padding: 8px;
+    border-radius: 20px;
+    margin: 5px 0 5px 0;
+    border: black ;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+button{
+    align-self: flex-end;
+    height: 30px;
+    width: 60px;
+    font-size: 100%;
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+}
+button:hover{
+    transform: translateY(-0.25em );
+    cursor: pointer;
+    background-color: #219EBC;
+    border-radius:30px;
+    box-shadow: 0 0.5em 0.5em -0.4em black;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.submit:hover{
+    color: white;
+}

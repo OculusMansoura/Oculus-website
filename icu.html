@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oculus</title>
+    <link rel="stylesheet" href="icu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <meta thhp-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+           <div class="logo"><img src="logo.png" alt=""></div>
+                  <ul class="links">
+                      <li> <a class="equipment" href="add.html">Add New Equipment</a></li>
+                      <li> <a class="update" href="departments.html">Departments</a> </li>
+                      <li><a href="options.html">Hospital</a></li>
+                 </ul>
+
+                    <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                    </div>
+         </div>
+     
+         <div class="dropdown_menu">
+             <li> <a class="equipment" href="criteria_form.html">Add New Equipment</a></li>
+            <li> <a class="update" href="departments.html">Departments</a> </li>
+            <li><a href="options.html">Hospital </a></li>
+            <li><a class="signout" href="signin.html">Sign Out</a></li>
+         </div>
+        
+     </header>
+         <!-- js dropdown_menu -->
+     <script>
+         const toggleBtn = document.querySelector(' .toggle_btn')
+         const toggleBtnIcon = document.querySelector(' .toggle_btn i')
+         const dropDownMenu = document.querySelector(' .dropdown_menu')
+       
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+     
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+     </script>
+    <div class="table-responsive">
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>NO</th>
+                    <th>SN</th>
+                    <th>Device Name</th>
+                    <th>Campany Name</th>
+                    <th>Dept</th>
+                    <th>Model</th>
+                    <th>Manufacture</th>
+                    <th>Manufacture Date</th>
+                    <th>Operating State</th>
+                    <th>Operating & Service</th>
+                    <th>Date Inventory Update</th>
+                    <th>Maintenance Service Provider </th>
+                    <th>Purchase Supplier</th>
+                    <th>Purchase Cost</th>
+                    <th>Warranty Expiration Date</th>
+                    <th>Risk Assessment</th>
+                    <th>Operating History</th>
+                    <th>History Of Recalls</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <span class="action-btn">
+                            <a href="update.html">Edit</a>
+                            <a href="#">Delete</a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <span class="action-btn">
+                            <a href="update.html">Edit</a>
+                            <a href="#">Delete</a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <span class="action-btn">
+                            <a href="update.html">Edit</a>
+                            <a href="#">Delete</a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <span class="action-btn">
+                            <a href="update.html">Edit</a>
+                            <a href="#">Delete</a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <span class="action-btn">
+                            <a href="update.html">Edit</a>
+                            <a href="#">Delete</a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <span class="action-btn">
+                            <a href="update.html">Edit</a>
+                            <a href="#">Delete</a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <span class="action-btn">
+                            <a href="update.html">Edit</a>
+                            <a href="#">Delete</a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <span class="action-btn">
+                            <a href="update.html">Edit</a>
+                            <a href="#">Delete</a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <span class="action-btn">
+                            <a href="update.html">Edit</a>
+                            <a href="#">Delete</a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <span class="action-btn">
+                            <a href="update.html">Edit</a>
+                            <a href="#">Delete</a>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="btn2">
+        <button class="btn" type="submit"><a class="signout" href="signin.html">Sign Out</a></button>
+    </div>
+</body>
+</html>

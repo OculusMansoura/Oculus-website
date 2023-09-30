@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("department.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family:'Rubik', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.logo img{
+   height: 6rem;
+   position: absolute; 
+   top: 0;
+   left:10px;
+ }
+li{
+    list-style: none;
+}
+
+.links a{
+    /* color:#7c888b; */
+    font-size: 1.3rem;
+    padding: 1rem 1rem;
+}
+.links a:hover{
+    background-color:#ffffff ;
+    padding: 1rem 1rem;
+    border: none;
+    outline: none;
+    border-radius:30px;
+    scale:1.05;
+    transform: translateY(-0.25em );
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.5rem -0.4rem #7c888b;
+}
+ header{
+    position: relative;
+    padding: 0.5rem 0.1rem;
+    border-bottom:0.01rem solid white;
+ }
+ .navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+   margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+ }
+.heading{
+    margin: 0 auto;
+    font-size: 1.5rem;
+
+}
+@media(max-width:800px){
+   .heading{
+    margin-top:8rem ;
+    font-size: 1rem;
+   }
+}
+ .btn:hover
+ {
+     color: white;
+     background-color: red;
+     padding: 1rem 1rem;
+     font-size: 1.3rem;
+     border: none;
+     outline: none;
+     border-radius:30px;
+     scale:1.05;
+     transform: translateY(-0.25em );
+     cursor: pointer;
+     box-shadow: 0 0.5rem 0.5rem -0.4rem red;
+ }
+
+ .signout:hover{
+     color: white;
+ }
+ .btn{
+         margin-top: 1rem;
+         font-size: 1.3rem;
+         padding: 1rem 1rem;
+         border-radius: 30px;
+         border: none;
+     }
+ 
+ .btn2{
+         text-align: right;
+     
+     }
+.btn1{
+    border-radius: 30px;
+    border: none;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+
+}
+
+.btn1:hover
+{
+    color: white;
+    background-color: #219EBC;
+    padding: 1rem 1rem;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    border-radius:30px;
+    scale:1.05;
+    transform: translateY(-0.25em );
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.5rem -0.4rem #000;
+}
+ #checkbox {
+  font-family: 'FontAwesome', 'sans-serif';
+  width: 6rem;
+ height: 3rem;
+ font-size: x-large;
+ color: #1E3050;
+ }
+ #checkbox9 {
+    font-family: 'FontAwesome', 'sans-serif';
+    width: 7rem;
+   height: 3rem;
+   font-size: x-large;
+   color: #1E3050;
+   }
+#checkbox11 {
+    font-family: 'FontAwesome', 'sans-serif';
+    width: 6.5rem;
+   height: 3rem;
+   font-size: x-large;
+   color: #1E3050;
+   }
+#checkbox12 {
+    font-family: 'FontAwesome', 'sans-serif';
+    width: 6.4rem;
+   height: 3rem;
+   font-size: x-large;
+   color: #1E3050;
+   }
+
+ .table-responsive{
+     max-width: 100%;
+     overflow: auto;
+     margin: auto;
+     border-radius: 4px;
+     padding-top: 40px;
+ }
+.content-table{
+     width: 100%;
+     font-size: 15px;
+     color: black;
+     white-space: nowrap;
+     border-collapse: collapse;
+ }
+ .content-table>thead{
+     background-color: #7c888b;
+     color: white;
+ }
+ .content-table>thead th{
+     padding: 15px;
+ }
+ .content-table th,
+ .content-table td{
+     border: 1px solid #000;
+ }
+ .content-table tbody tr:nth-of-type(even){
+     background-color: #f3f3f3;
+ }
+ .content-table>tbody>tr>td{
+     width: 70px;
+     height: 50px;
+     font-size: 19px;
+ }
+ .h3{
+color: red;
+text-align: center;
+ }
+ /* .action-btn{
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+ }
+ .action-btn>a{
+     text-decoration: none;
+     color: #000;
+     background: white;
+     border: 1px solid red;
+     display: inline-block;
+     padding: 5px 20px;
+     font-weight: bold;
+     border-radius: 30px;
+     transition: 0.3s ease-in-out;
+ }
+ .action-btn>a:nth-child(1){
+     border-color: #219EBC;
+ }
+ .action-btn>a:nth-child(1):hover{
+     background-color: #219EBC;
+ }
+ .action-btn>a:nth-child(2){
+     border-color:red;
+ }
+ 
+ .action-btn>a:hover{
+     box-shadow: 0 3px 8px black;
+     background-color: red;
+     color: white;
+ } */
+ .content-table>tbody>tr{
+     background-color: #efefef;
+     transition: 0.3s ease-in-out;
+ }
+ .content-table>tbody>tr:nth-child(odd){
+     background-color: white;
+ }
+.table2{
+    margin-top: 2rem;
+   
+}
+ .table2>thead{
+    
+    background-color: white;
+   
+}
+ .table2>thead th{
+   
+     padding: 1rem;
+     border: 0.1rem solid black;
+ }
+ 
+ 
+ 
+ 

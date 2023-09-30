@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("department.png");
+    background-size: cover;
+    background-position: center;
+    font-family:'Rubik', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.logo img{
+   height: 6rem;
+   position: absolute; 
+   top: 0;
+   left:10px;
+ }
+li{
+    list-style: none;
+}
+
+.links a{
+    /* color:#7c888b; */
+    font-size: 1.3rem;
+    padding: 1rem 1rem;
+}
+.links a:hover{
+    background-color:#ffffff ;
+    padding: 1rem 1rem;
+    border: none;
+    outline: none;
+    border-radius:30px;
+    scale:1.05;
+    transform: translateY(-0.25em );
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.5rem -0.4rem #7c888b;
+}
+ header{
+    position: relative;
+    padding: 0.5rem 0.1rem;
+    border-bottom:0.01rem solid white;
+ }
+ .navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+   margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+ }
+.navbar .links{
+    display: flex;
+    gap: 4rem;
+}
+.navbar .toggle_btn{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* dropdown menu */
+.dropdown_menu{
+    display: none ;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    height: 0;
+    background: rgb(124, 136, 139,  0.8);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open{
+    height: 240px;
+}
+.dropdown_menu .signout:hover{
+    
+    color: white;
+    background-color: red;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius:30px;
+    transform: translateY(-0.25em );
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.5rem -0.4rem red;
+}
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu li a{
+    color: #ffffff;
+}
+
+
+/* responsive design */
+@media(max-width:992px){
+ .navbar .links{
+    display: none;
+ }
+ .navbar .toggle_btn{
+    display: block; 
+ }
+.btn{
+    display:none ;
+}
+ .dropdown_menu{
+    display: block;
+ }
+}
+@media(max-width:576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}
+@media(max-width:414px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}
+
+.btn:hover
+{
+    color: white;
+    background-color: red;
+    padding: 1rem 1rem;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    border-radius:30px;
+    scale:1.05;
+    transform: translateY(-0.25em );
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.5rem -0.4rem red;
+}
+.signout:hover{
+    color: white;
+}
+.btn{
+        margin-top: 1rem;
+        font-size: 1.3rem;
+        padding: 1rem 1rem;
+        border-radius: 30px;
+        border: none;
+    }
+
+.btn2{
+        text-align: right;
+    
+    }
+
+.table-responsive{
+    max-width: 100%;
+    overflow: auto;
+    margin: auto;
+    border-radius: 4px;
+    padding-top: 40px;
+}
+table{
+    width: 100%;
+    font-size: 15px;
+    color: black;
+    white-space: nowrap;
+    border-collapse: collapse;
+}
+table>thead{
+    background-color: #7c888b;
+    color: white;
+}
+table>thead th{
+    padding: 15px;
+}
+table th,
+table td{
+    border: 1px solid #000;
+}
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+table>tbody>tr>td{
+    width: 70px;
+    height: 50px;
+    font-size: 19px;
+}
+.action-btn{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.action-btn>a{
+    text-decoration: none;
+    color: #000;
+    background: white;
+    border: 1px solid red;
+    display: inline-block;
+    padding: 5px 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+}
+.action-btn>a:nth-child(1){
+    border-color: #219EBC;
+}
+.action-btn>a:nth-child(1):hover{
+    background-color: #219EBC;
+}
+.action-btn>a:nth-child(2){
+    border-color:red;
+}
+
+.action-btn>a:hover{
+    box-shadow: 0 3px 8px black;
+    background-color: red;
+    color: white;
+}
+table>tbody>tr{
+    background-color: #efefef;
+    transition: 0.3s ease-in-out;
+}
+table>tbody>tr:nth-child(odd){
+    background-color: white;
+}

@@ -1,0 +1,81 @@
+body{
+    margin: 70;
+    font-family: 'Roboto', sans-serif;
+    background-image: url("department.png");
+    background-size: cover;
+    background-position: center;
+
+}
+.logo{
+    height: 6rem;
+   position: absolute; 
+   top: 0;
+   left:10px;
+    
+}
+.title{
+    text-align: center;
+    color: black;
+}
+@media (max-width:950px){
+   .title{
+    margin-top: 6rem;
+   }
+}
+
+@media (max-width:480px){
+    .title{
+     margin-top: 6rem;
+    }
+ }
+.list{
+    font-size: large;
+    font-weight: 500;
+    margin: auto;
+    
+}
+ol ul{
+    padding-bottom: 40px;
+}
+
+.c1, .c2, .c3, .c4, .c5, .c6, .c7{
+    font-size: 25px;
+
+}
+
+.c1{
+    padding-top: 40px;
+}
+button{
+    width: 15%;
+    height: 50px;
+    border-radius: 50px;
+    font-size:large;
+    border: none;
+}
+button:hover{
+    transform: translateY(-0.25em );
+    cursor: pointer;
+    background-color: red;
+    border-radius:30px;
+    box-shadow: 0 0.5em 0.5em -0.4em red;
+    color: white;
+}
+.signout:hover{
+    color:white
+}
+#hr1{
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.btn{
+    margin-top: 10px;
+}
+
+.btn2{
+    text-align: right;
+}
